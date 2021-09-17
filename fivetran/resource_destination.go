@@ -59,6 +59,7 @@ func resourceDestinationSchemaConfig() *schema.Schema {
 				"bucket":                 {Type: schema.TypeString, Optional: true},
 				"server_host_name":       {Type: schema.TypeString, Optional: true},
 				"http_path":              {Type: schema.TypeString, Optional: true},
+				"secret_key":             {Type: schema.TypeString, Optional: true, Sensitive: true},
 				"personal_access_token":  {Type: schema.TypeString, Optional: true, Sensitive: true},
 				"create_external_tables": {Type: schema.TypeString, Optional: true},
 				"external_location":      {Type: schema.TypeString, Optional: true},
